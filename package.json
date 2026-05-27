@@ -6,7 +6,14 @@
   "scripts": {
     "dev": "tsx watch src/server.ts"
   },
-  "keywords": ["blog", "api", "express", "typescript", "prisma", "node"],
+  "keywords": [
+    "blog",
+    "api",
+    "express",
+    "typescript",
+    "prisma",
+    "node"
+  ],
   "author": "Matheus Muzitano Ferreira",
   "license": "MIT",
   "type": "commonjs",
@@ -22,6 +29,7 @@
     "typescript": "^6.0.3"
   },
   "dependencies": {
+    "@prisma/client": "^6.19.3",
     "bcryptjs": "^3.0.3",
     "cors": "^2.8.6",
     "express": "^5.2.1",

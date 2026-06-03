@@ -14,3 +14,13 @@ export const deletePost: RequestHandler = async (req, res) => {
     // Lógica para deletar um post
     return res.json({ message: 'Post deletado com sucesso.' });
 }
+
+export const getAllPosts: RequestHandler = async (req, res) => {
+    // Lógica para buscar todos os posts
+    return res.json({ message: 'Buscando todos os posts...' });
+}
+
+export const getPost: RequestHandler = async (req, res) => {
+    // Lógica para buscar um post específico pelo slug
+    return res.json({ message: 'Buscando um post específico...' });
+}

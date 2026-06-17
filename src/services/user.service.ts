@@ -44,3 +44,17 @@ if (!isMatch) return false
 
 return user
 }
+
+export const getUserById = async (id: number) => {
+    console.log ('Fetching user with id:', id); // Log para verificar o ID recebido
+    return await prisma.user.findUnique({
+        where: { id },
+        select: {
+            id: true,
+            name: true,
+            email: true,
+            status: true,
+        }
+
+    })
+}
